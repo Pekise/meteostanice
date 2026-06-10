@@ -64,7 +64,7 @@ export async function fetchStationData() {
     temp_in:      tempIn != null ? +(tempIn / 10).toFixed(1) : null,
     humidity_out: hum    != null ? hum                       : null,
     humidity_in:  humIn  != null ? humIn                     : null,
-    pressure:     pres   != null ? +(pres / 100).toFixed(1)  : null,
+    pressure:     pres   != null ? +(pres / 100 - 11).toFixed(1)  : null,
     wind_speed:   ws     != null ? +(ws / 10).toFixed(1)     : null,
     wind_gust:    gust   != null ? +(gust / 10).toFixed(1)   : null,
     wind_dir:     wd     != null ? wd                        : null,
